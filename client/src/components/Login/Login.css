@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter+Tight:wght@900&family=Kanit:wght@900&family=Lato:wght@300&family=Poppins:wght@200&display=swap');
+
+:root{
+    --primary-blue:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+
+}
+
+.login-wrap{
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    background-color: var(--light-color);
+    
+}
+.login-wrap h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Poppins;
+    color: #047aed;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: green;
+    height: 300px;
+    padding: 20px 20px;
+    width: 260px;
+    background-color: white;
+    border-radius: 7px;
+    color: #000;
+    font-family: 'Lato',sans-serif;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+.login-form h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #047aed;
+}
+.login-form input{
+    height: 35px;
+    width: 200px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #111;
+    color: #000;
+    padding: 3px;
+}
+.login-form button{
+    padding: 12px 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark-color);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+
+}
+.login-form input::placeholder{
+    color: #111;
+    font-size: 1rem;
+}
+
+
