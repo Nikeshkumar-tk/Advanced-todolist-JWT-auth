@@ -72,6 +72,7 @@ const valiadatePassword = await bcrypt.compare(password, user.password)
     if(valiadatePassword){
         return res.status(200).json({
             username:user.username,
+            id:user._id,
             email:user.email,
             token:generateToken(user._id)
 

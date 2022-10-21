@@ -36,7 +36,7 @@ try{
 
 
 //@desc   Creating todos of the user
-//@route  /todos
+//@route  /todos/create
 //@method POST
 
 const createTodos = asyncHandler( async (req, res) => {

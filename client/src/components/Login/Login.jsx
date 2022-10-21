@@ -1,16 +1,24 @@
 import './Login.css'
 import axios from '../../axios'
 import { useRef } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { loginStart, loginSucess, loginFailure} from '../../features/user/userSlice'
+import { useEffect } from 'react'
+import { store } from '../../store'
 
 
 
 const Login = () => {
+  
   const emailRef = useRef()
   const passwordRef = useRef()
+  const {user} = useSelector((store) => store.user)
+  const dispatch = useDispatch()
 
   const loginUser = async (e) => {
 
     e.preventDefault()
+    dispatch(loginStart())
     try{
 
       const res = await axios.post("/login",{
@@ -18,13 +26,20 @@ const Login = () => {
         password:passwordRef.current.value
       })
       console.log(res.data)
-    }catch(err) {
+      dispatch(loginSucess(res.data))
+      if (res.data) {
+        localStorage.setItem('user', JSON.stringify(res.data))
+      }
+      res && window.location.replace("/")
+    }catch(err){
 
       console.log(err)
+      dispatch(loginFailure())
 
     }
 
   }
+
   return (
     <div className='login-wrap'>
       <h1>Nik Todos</h1>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter+Tight:wght@900&family=Kanit:wght@900&family=Lato:wght@300&family=Poppins:wght@200&display=swap');
+
+
+:root{
+    --primary-blue:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+
+}
+
+
+.nav-wrap{
+height: 70px;
+background-color: var(--dark-color);
+width: 100%;
+padding-left: 10px;
+color: #fff;
+font-family: 'Lato';
+position: fixed;
+z-index: 100;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    background-color: var();
+    height: 100%;
+    width: 100%;
+
+}
+.nav-detail-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    gap: 30px;
+    height: 100%;
+}
+.user-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+.task-wrap {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.task-indicator {
+    position: absolute;
+   background-color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    top: 12px;
+    left: 10px;
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+}

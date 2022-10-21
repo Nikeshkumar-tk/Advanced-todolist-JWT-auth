@@ -4,9 +4,10 @@ const {protect} = require('../middlewares/authMiddleware')
 
 
 router.route("/todos")
-.get(protect, getAllTodos)
-.post(protect, createTodos)
+.post(protect, getAllTodos)
 .delete(protect, deleteTodo)
+
+router.post("/todos/create",protect, createTodos)
 
 
 module.exports = router

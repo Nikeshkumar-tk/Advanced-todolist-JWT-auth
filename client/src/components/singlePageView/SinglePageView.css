@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter+Tight:wght@900&family=Kanit:wght@900&family=Lato:wght@300&family=Poppins:wght@200&display=swap');
+
+:root{
+    --primary-blue:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+
+}
+
+
+.desc-wrap {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 100px;
+    background-color: var(--light-color);
+   margin-left: 200px;
+}
+.desc-wrap h4 {
+    font-family:"Lato";
+    font-size: 2rem;
+}
+.desc-wrap p {
+    font-family: "Lato";
+    font-size: 1.5rem;
+}
+.complete-btn {
+    margin-top: 250px;
+    align-self: flex-end;
+    padding:9px 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1c3fa8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
